@@ -11,15 +11,15 @@ for line in lines:
     left_num, right_num = 0, 0
 
     while left <= right:
-        left_spell = spells[left]
         if left_num == 0:
+            left_spell = spells[left]
             if left_spell.isnumeric():
                 left_num = int(left_spell)
             else:
                 left += 1
 
-        right_spell = spells[right]
         if right_num == 0:
+            right_spell = spells[right]
             if right_spell.isnumeric():
                 right_num = int(right_spell)
             else:
